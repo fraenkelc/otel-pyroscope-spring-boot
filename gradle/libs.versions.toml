@@ -1,0 +1,25 @@
+[versions]
+spring-boot = "3.3.6"
+pyroscope-otel = "0.10.1.11"
+
+[libraries]
+opentelemetry-api = { module = "io.opentelemetry:opentelemetry-api" }
+opentelemetry-context = { module = "io.opentelemetry:opentelemetry-context" }
+opentelemetry-sdk-trace = { module = "io.opentelemetry:opentelemetry-sdk-trace" }
+
+pyroscope-otel = { module = "io.pyroscope:otel", version.ref = "pyroscope-otel" }
+
+spring-boot = { module = "org.springframework.boot:spring-boot" }
+spring-boot-actuator-autoconfigure = { module = "org.springframework.boot:spring-boot-actuator-autoconfigure" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
+spring-boot-autoconfigure-processor = { module = "org.springframework.boot:spring-boot-autoconfigure-processor" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-test" }
+
+spring-context = { module = "org.springframework:spring-context" }
+
+
+assertj-core = { module = "org.assertj:assertj-core" }
+
+[plugins]
