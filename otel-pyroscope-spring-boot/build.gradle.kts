@@ -4,7 +4,6 @@ plugins {
 }
 
 group = "io.github.fraenkelc"
-version = project.properties["otelProfilingVersion"] ?: "1.0.0-SNAPSHOT"
 
 java {
     targetCompatibility = JavaVersion.VERSION_17
