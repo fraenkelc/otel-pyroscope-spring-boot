@@ -8,7 +8,6 @@ group = "io.github.fraenkelc"
 // https://github.com/gradle/gradle/issues/10861
 val internal by configurations.creating {
     description = "Internal configuration used to hide platform dependencies from generated poms"
-    isVisible = false
     isCanBeResolved = false
     isCanBeConsumed = false
 }
