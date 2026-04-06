@@ -1,0 +1,12 @@
+[versions]
+spring-boot = "4.0.5"
+otel-pyroscope-spring = "1.0.0"
+
+[libraries]
+spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-opentelemetry = { module = "org.springframework.boot:spring-boot-starter-opentelemetry" }
+
+otel-pyroscope-spring-boot-starter = { module = "io.github.fraenkelc:otel-pyroscope-spring-boot-starter", version.ref = "otel-pyroscope-spring" }
+
+[plugins]

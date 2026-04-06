@@ -1,5 +1,3 @@
-import org.ajoberstar.reckon.core.CommitMessageScopeParser
-
 rootProject.name = "otel-pyroscope-spring-boot-parent"
 
 dependencyResolutionManagement {
@@ -9,7 +7,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-    id("org.ajoberstar.reckon.settings") version "0.19.1"
+    id("org.ajoberstar.reckon.settings") version "2.0.0"
 }
 
 extensions.configure<org.ajoberstar.reckon.gradle.ReckonExtension> {
@@ -19,4 +17,4 @@ extensions.configure<org.ajoberstar.reckon.gradle.ReckonExtension> {
     setStageCalc(calcStageFromProp())
 }
 
-include(":otel-pyroscope-spring-boot", ":otel-pyroscope-spring-boot-starter")
+include(":otel-pyroscope-spring-boot-starter")
