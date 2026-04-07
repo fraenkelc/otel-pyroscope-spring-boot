@@ -20,18 +20,18 @@ import io.otel.pyroscope.PyroscopeOtelConfiguration;
 import io.otel.pyroscope.PyroscopeOtelSpanProcessor;
 import io.otel.pyroscope.shadow.javaagent.PyroscopeAgent;
 import io.otel.pyroscope.shadow.javaagent.config.Config;
-import org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.micrometer.tracing.opentelemetry.autoconfigure.OpenTelemetryTracingAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@AutoConfiguration(before = OpenTelemetryAutoConfiguration.class)
+@AutoConfiguration(before = OpenTelemetryTracingAutoConfiguration.class)
 public class PyroscopeOtelAutoConfiguration {
 
   @Configuration(proxyBeanMethods = false)
-  @ConditionalOnClass({SpanProcessor.class, PyroscopeOtelSpanProcessor.class})
+  @ConditionalOnClass({SpanProcessor.class, PyroscopeOtelSpanProcessor.class, PyroscopeAgent.class})
   @EnableConfigurationProperties(PyroscopeOtelProperties.class)
   public static class SpanProcessorConfiguration {
     private final PyroscopeOtelProperties pyroscopeOtelProperties;

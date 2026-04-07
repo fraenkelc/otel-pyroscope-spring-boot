@@ -38,11 +38,11 @@ dependencies {
 
     api(libs.spring.boot.actuator.autoconfigure)
     api(libs.spring.boot.autoconfigure)
-    api(libs.spring.boot)
+    api(libs.spring.boot.micrometer.tracing.opentelemetry )
 
-    compileOnly(libs.opentelemetry.sdk.trace)
     compileOnly(libs.opentelemetry.api)
     compileOnly(libs.pyroscope.otel)
+    compileOnly(libs.pyroscope.agent)
 
     implementation(libs.spring.context)
 }
