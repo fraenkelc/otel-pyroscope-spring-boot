@@ -35,6 +35,7 @@ services:
     command: >
       redpanda start --overprovisioned
       --mode=dev-container
+      --smp=2
       --kafka-addr=PLAINTEXT://0.0.0.0:9092
       --advertise-kafka-addr=PLAINTEXT://redpanda:9092
 
@@ -116,7 +117,7 @@ services:
       LOADER_PATH: libs,/opt/pyroscope-agent.jar
       APPLICATION_NAME: spring-opentelemetry-classpath-example
       PYROSCOPE_SERVER_ADDRESS: http://pyroscope:4040
-      PYROSCOPE_APPLICATION_NAME: sspring-opentelemetry-classpath-example
+      PYROSCOPE_APPLICATION_NAME: spring-opentelemetry-classpath-example
       OTEL_SERVICE_NAME: spring-opentelemetry-classpath-example
       OTEL_JAVAAGENT_DEBUG: "true"
       MANAGEMENT_OPENTELEMETRY_TRACING_EXPORT_OTLP_ENDPOINT: http://tempo:4318/v1/traces

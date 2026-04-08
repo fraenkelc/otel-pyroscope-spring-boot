@@ -1,0 +1,27 @@
+# This is a docker-compose file that does not expose any ports. It is used for testing purposes only.
+include:
+  - docker-compose.yml
+services:
+  pyroscope:
+    ports: !reset []
+
+  grafana:
+    ports: !reset []
+
+  tempo:
+    ports: !reset []
+
+  redpanda:
+    ports: !reset []
+
+  redpanda-console:
+    ports: !reset []
+
+  spring-opentelemetry-agent-example:
+    ports: !reset []
+
+  spring-opentelemetry-agent-classpath-example:
+    ports: !reset []
+
+  spring-opentelemetry-classpath-example:
+    ports: !reset []

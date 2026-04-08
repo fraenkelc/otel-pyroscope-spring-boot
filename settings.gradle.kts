@@ -17,4 +17,4 @@ extensions.configure<org.ajoberstar.reckon.gradle.ReckonExtension> {
     setStageCalc(calcStageFromProp())
 }
 
-include(":otel-pyroscope-spring-boot-starter")
+include(":otel-pyroscope-spring-boot-starter", "integration-tests")

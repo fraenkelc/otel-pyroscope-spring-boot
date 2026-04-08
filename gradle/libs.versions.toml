@@ -2,6 +2,7 @@
 spring-boot = "4.0.5"
 pyroscope-otel = "2.0.1"
 pyroscope-agent = "2.5.1"
+testcontainers = "2.0.4"
 
 [libraries]
 opentelemetry-api = { module = "io.opentelemetry:opentelemetry-api" }
@@ -14,9 +15,14 @@ spring-boot-autoconfigure-processor = { module = "org.springframework.boot:sprin
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
 spring-boot-micrometer-tracing-opentelemetry = { module = "org.springframework.boot:spring-boot-micrometer-tracing-opentelemetry" }
 spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
-spring-boot-test = { module = "org.springframework.boot:spring-boot-test" }
 spring-context = { module = "org.springframework:spring-context" }
 
 assertj-core = { module = "org.assertj:assertj-core" }
-
+awaitility = { module = "org.awaitility:awaitility", version = "4.3.0" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-test" }
+spring-boot-resttestclient = { module = "org.springframework.boot:spring-boot-resttestclient" }
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+testcontainers-junit-jupiter = { module = "org.testcontainers:testcontainers-junit-jupiter", version.ref = "testcontainers" }
+logback-classic = { module = "ch.qos.logback:logback-classic" }
+json-path = { module = "com.jayway.jsonpath:json-path" }
 [plugins]

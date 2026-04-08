@@ -5,6 +5,7 @@ COPY settings.gradle.kts ./settings.gradle.kts
 COPY build.gradle.kts ./build.gradle.kts
 COPY gradle/libs.versions.toml ./gradle/libs.versions.toml
 COPY otel-pyroscope-spring-boot-starter/build.gradle.kts ./otel-pyroscope-spring-boot-starter/build.gradle.kts
+RUN mkdir -p ./integration-tests
 RUN gradle dependencies --no-daemon -q
 COPY otel-pyroscope-spring-boot-starter/src/ ./otel-pyroscope-spring-boot-starter/src/
 RUN gradle jar copyArtifactsForExamples --no-daemon -q
