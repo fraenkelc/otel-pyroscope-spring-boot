@@ -32,6 +32,9 @@ val libWithDepsForExample by configurations.creating {
     isCanBeResolved = true
     isCanBeConsumed = false
 }
+val testDependencies = configurations.consumable("testDependencies") {
+    description = "Test dependencies for use in integration tests"
+}
 
 listOf(
     "compileClasspath",
@@ -147,5 +150,6 @@ val copyArtifactsForExamples by tasks.registering(Sync::class) {
     into("lib") {
         from(libWithDepsForExample)
     }
-
 }
+
+artifacts.add("testDependencies", copyArtifactsForExamples.map { it.destinationDir })
