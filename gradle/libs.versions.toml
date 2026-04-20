@@ -2,7 +2,7 @@
 spring-boot = "4.0.5"
 pyroscope-otel = "2.0.1"
 pyroscope-agent = "2.5.2"
-testcontainers = "2.0.4"
+testcontainers = "2.0.5"
 
 [libraries]
 opentelemetry-api = { module = "io.opentelemetry:opentelemetry-api" }
