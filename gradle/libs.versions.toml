@@ -1,7 +1,7 @@
 [versions]
 spring-boot = "4.1.0"
 pyroscope-otel = "2.1.0"
-pyroscope-agent = "2.6.0"
+pyroscope-agent = "2.8.0"
 testcontainers = "2.0.5"
 
 [libraries]
