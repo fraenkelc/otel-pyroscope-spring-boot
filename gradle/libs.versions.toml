@@ -1,5 +1,5 @@
 [versions]
-spring-boot = "4.1.0"
+spring-boot = "4.1.1"
 pyroscope-otel = "2.1.2"
 pyroscope-agent = "2.9.1"
 testcontainers = "2.0.5"
