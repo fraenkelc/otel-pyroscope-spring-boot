@@ -18,7 +18,7 @@ spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-depe
 spring-context = { module = "org.springframework:spring-context" }
 
 assertj-core = { module = "org.assertj:assertj-core" }
-awaitility = { module = "org.awaitility:awaitility", version = "4.3.0" }
+awaitility = { module = "org.awaitility:awaitility", version = "4.4.0" }
 spring-boot-test = { module = "org.springframework.boot:spring-boot-test" }
 spring-boot-resttestclient = { module = "org.springframework.boot:spring-boot-resttestclient" }
 testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
